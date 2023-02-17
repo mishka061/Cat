@@ -1,0 +1,139 @@
+*{
+    margin: 0;
+}
+body{
+    font-family: 'Philosopher', sans-serif;
+    background: #FFEFBA;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #FFFFFF, #FFEFBA);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #FFFFFF, #FFEFBA); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+#navbar,
+#footer {
+    margin: 0;
+    padding: 0;
+    border: 2px solid #0066FF;
+    text-align: center;
+    background-color: #33ADFF;
+    border-radius: 10px;
+}
+#navbar li {
+    display: inline;
+}
+#navbar a,
+#footer a {
+    color: #fff;
+    padding: 10px 10px;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    font-size: 20px;
+}
+#navbar a:hover,
+#footer a:hover {
+    border-radius: 5px;
+    background-color: #0066FF;
+}
+h1 {
+    text-align: center;
+    font-size: 40px;
+    padding: 30px;
+}
+.start,
+.istoria {
+    float:left;
+    border:2px solid #c5a0a0;
+    padding:20px;
+    border-radius: 10px;
+    text-align: center;
+}
+.start img, 
+.istoria img {
+    width: 200px;
+    padding: 20px;
+}
+.start h2 {
+    font-size: 30px;
+}
+.start p,
+.istoria p {
+    font-size: 20px;
+    padding: 20px;
+}
+.istoria h2 {
+    text-align: center;
+    font-size: 40px;
+}
+.flexbox { 
+    display: flex ;
+    border:2px solid #c5a0a0;
+    padding:20px;
+    border-radius: 10px;
+    text-align: center;
+ }
+ .flexbox p {
+    padding: 20px;
+ }
+ #footer h3 {
+    color: #ffffff;
+    font-size: 20px;
+    padding: 10px;
+}
+.button{
+	position: fixed; 
+    bottom: 10px; 
+    right: 10px;
+	z-index: 1;
+}
+.button-icon{
+    width: 50px;
+    border-radius: 50px;
+    transform: rotate(180deg);
+}
+@media screen and (max-width: 1023px) and (min-width: 501px){
+    #navbar a,
+    .start p,
+    .istoria p,
+    #footer a,
+    #footer h3{
+        font-size: 16px;
+    }
+    h1,
+    .istoria h2 {
+        font-size: 30px;
+    }
+    .start h2 {
+        font-size: 20px;
+    }
+    .start img, 
+    .istoria img {
+    width: 150px;
+    padding: 16px;
+}
+    .button-icon{
+        width: 40px;
+    }
+}
+@media screen and (max-width: 500px) {
+    #navbar a,
+    .start p,
+    .istoria p,
+    #footer a,
+    #footer h3{
+        font-size: 14px;
+    }
+    h1,
+    .istoria h2 {
+        font-size: 20px;
+    }
+    .start h2 {
+        font-size: 16px;
+    }
+    .start img, 
+    .istoria img {
+    width: 100px;
+    padding: 14px;
+}
+    .button-icon{
+        width: 30px;
+    }
+}

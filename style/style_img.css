@@ -1,0 +1,28 @@
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.img_cat {
+    flex-wrap: wrap;
+    margin: 20px;
+    padding: 20px;
+
+}
+.kartinki{
+    width: 400px;
+    height: 400px;
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5); 
+}
+@media screen and (max-width: 1023px) and (min-width: 501px){
+    .kartinki{
+        width: 300px;
+        height: 300px;
+    }
+}
+@media screen and (max-width: 500px){
+    .kartinki{
+        width: 200px;
+        height: 200px;
+    }
+}
