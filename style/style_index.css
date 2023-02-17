@@ -1,0 +1,117 @@
+#wrapper {
+  position:relative;
+  /* The image used */
+  background-image: url("https://klike.net/uploads/posts/2022-12/1672312520_2-1.jpg");
+  overflow-x: hidden;
+  z-index: 0;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+}
+#content {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  top: 1500px;
+  background-color: rgba(230, 218, 230, .5);
+  padding: 20px;
+  margin: 50px 0 0 0;
+  box-sizing: border-box;
+  box-shadow: 100px 5px 25px #333; 
+}
+p {
+  position:relative;
+  left: 30%;
+  width: 40%;
+  height: 100%;
+  font-size: 40px;
+}
+
+.main h1 {
+  text-align: center;
+  font-size: 40px;
+  padding: 30px;
+  position:relative;
+}
+#paralx0 img,
+#paralx1 img,
+#paralx2 img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    box-shadow: 10px 5px 25px #333;
+    line-height: 200px;
+    position: absolute;
+   
+}
+#paralx0,#paralx1,#paralx2 {
+  position: absolute;
+}
+#paralx2 {
+  top: 100px;
+  left: 15%;
+  z-index: 20;
+}
+#paralx0 {
+  top: 600px;
+  right: 30%;
+  z-index: 22;
+}
+#paralx1 {
+  top: 1200px;
+  left: 15%;
+  z-index: 21;
+}
+@media screen and (max-width: 1023px) and (min-width: 501px){
+    #paralx2 {
+        top: 70px;
+      }
+      #paralx0 {
+        top: 365px;
+      }
+      #paralx1 {
+        top: 800px;
+      }
+    #paralx0 img,
+    #paralx1 img,
+    #paralx2 img {
+        width: 200px;
+        height: 200px;
+    }
+    p {
+        font-size: 30px;
+    }
+    .main h1 {
+        font-size: 30px;}
+    #content {
+        top: 1000px;
+    }
+}
+
+@media screen and (max-width: 500px){
+    #paralx2 {
+        top: 50px;
+      }
+      #paralx0 {
+        top: 370px;
+      }
+      #paralx1 {
+        top: 600px;
+      }
+    #paralx0 img,
+    #paralx1 img,
+    #paralx2 img {
+        width: 100px;
+        height: 100px;
+    }
+    p {
+        font-size: 20px;
+    }
+    .main h1 {
+        font-size: 20px;
+    }
+    #content {
+        top: 800px;
+    }
+}
