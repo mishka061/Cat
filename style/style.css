@@ -19,7 +19,8 @@ header,
 }
 
 header .link_a{
-    padding: 0;
+    background-color: #0066FF;
+    border-radius: 10px;
 }
 
 header .link,
@@ -33,7 +34,6 @@ header .link_a,
     font-size: 20px;
 }
 header .link:hover,
-header .link_a:hover,
 #footer a:hover {
     border-radius: 5px;
     background-color: #0066FF;
